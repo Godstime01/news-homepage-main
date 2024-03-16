@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <nav class=" container">
+    <div class="navigation">
+      <a href="">
+        <img src="/assets/images/logo.svg" alt="logo">
+      </a>
+
+      <!-- navigation links -->
+      <div class="navigation--links">
+        <a href="" class="navigation_link">Home</a>
+        <a href="" class="navigation_link">New</a>
+        <a href="" class="navigation_link">Popular</a>
+        <a href="" class="navigation_link">Trending</a>
+        <a href="" class="navigation_link">Categories</a>
+      </div>
+
+      <button class="menu--btn">
+        <img src="./assets/images/icon-menu.svg" alt="">
+      </button>
+    </div>
+  </nav>
+
+
+  <main class="container main--grid">
+    <img src="/assets/images/image-web-3-desktop.jpg" alt="">
+    
+      <h1>The Bright Future of Web 3.0?</h1>
+      <div>
+    <p>
+      We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of
+      the
+      people.
+      But is it really fulfilling its promise?
+    </p>
+
+    <button class="read--more">Read more</button>
+    </div>
+
+    <section class="news--section">
+      <h2>New</h2>
+
+      <div>
+        <h3><a href="">Hydrogen VS Electric Cars</a></h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+
+      <div>
+        <h3><a href="">The Downsides of AI Artistry</a></h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+
+      <div>
+        <h3><a href="">Is VC Funding Drying Up?</a></h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </section>
+
+
+    <!-- <section class="three--cards"> -->
+      <div class="small--cards">
+        <img src="/assets/images/image-retro-pcs.jpg" alt="image-retro-pcs">
+        <div>
+          <h3>01</h3>
+          <h4>Reviving Retro PCs</h4>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="small--cards">
+        <img src="/assets/images/image-top-laptops.jpg" alt="image-top-laptops">
+        <div>
+          <h3>02</h3>
+          <h4>Top 10 Laptops of 2022</h4>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+
+      <div class="small--cards">
+        <img src="/assets/images/image-gaming-growth.jpg" alt="image-gaming-growth">
+        <div>
+          <h3>03</h3>
+          <h4>The Growth of Gaming</h4>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    <!-- </section> -->
+
+  </main>
+
+
+  <script>
+    const menuBtn = document.querySelector('.menu--btn')
+
+    menuBtn.addEventListener('click', e=>{
+
+
+      const nav = document.querySelector('.navigation--links')
+
+      console.log(nav.classList.contains('active'))
+      if(nav.classList.contains('active')){
+        nav.classList.remove('active')
+        menuBtn.querySelector('img').src = '/assets/images/icon-menu.svg'
+      }else{
+        nav.classList.add('active')
+        menuBtn.querySelector('img').src = '/assets/images/icon-menu-close.svg'
+      }
+
+    })
+
+  </script>
+</body>
+
+</html>
