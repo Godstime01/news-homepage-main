@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -15,7 +15,7 @@
   <nav class=" container">
     <div class="navigation">
       <a href="">
-        <img src="/assets/images/logo.svg" alt="logo">
+        <img src="./assets/images/logo.svg" alt="logo">
       </a>
 
       <!-- navigation links -->
@@ -28,14 +28,14 @@
       </div>
 
       <button class="menu--btn">
-        <img src="./assets/images/icon-menu.svg" alt="">
+        <img src="../assets/images/icon-menu.svg" alt="">
       </button>
     </div>
   </nav>
 
 
   <main class="container main--grid">
-    <img src="/assets/images/image-web-3-desktop.jpg" alt="">
+    <img src="./assets/images/image-web-3-desktop.jpg" alt="">
     
       <h1>The Bright Future of Web 3.0?</h1>
       <div>
@@ -71,7 +71,7 @@
 
     <!-- <section class="three--cards"> -->
       <div class="small--cards">
-        <img src="/assets/images/image-retro-pcs.jpg" alt="image-retro-pcs">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="image-retro-pcs">
         <div>
           <h3>01</h3>
           <h4>Reviving Retro PCs</h4>
@@ -80,7 +80,7 @@
       </div>
 
       <div class="small--cards">
-        <img src="/assets/images/image-top-laptops.jpg" alt="image-top-laptops">
+        <img src="./assets/images/image-top-laptops.jpg" alt="image-top-laptops">
         <div>
           <h3>02</h3>
           <h4>Top 10 Laptops of 2022</h4>
@@ -89,7 +89,7 @@
       </div>
 
       <div class="small--cards">
-        <img src="/assets/images/image-gaming-growth.jpg" alt="image-gaming-growth">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="image-gaming-growth">
         <div>
           <h3>03</h3>
           <h4>The Growth of Gaming</h4>
@@ -112,10 +112,10 @@
       console.log(nav.classList.contains('active'))
       if(nav.classList.contains('active')){
         nav.classList.remove('active')
-        menuBtn.querySelector('img').src = '/assets/images/icon-menu.svg'
+        menuBtn.querySelector('img').src = './assets/images/icon-menu.svg'
       }else{
         nav.classList.add('active')
-        menuBtn.querySelector('img').src = '/assets/images/icon-menu-close.svg'
+        menuBtn.querySelector('img').src = './assets/images/icon-menu-close.svg'
       }
 
     })
